@@ -1,0 +1,59 @@
+{
+  "submission_id": "drawedumath_1065658_006",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 6.1,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "The number line is labeled correctly.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student did not use arrows to indicate the direction of movement on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "The final answer is not clearly marked on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "does_the_depiction_of_each_addend_start_at_the_end_of_the_depiction_of_t",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "procedure"
+      ],
+      "feedback": "No, the depiction of each addend does not start at the end of the depiction of the previous addend. The lines that hop and curve start in seemingly random locations.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image 80545ef3-0616-4318-8bc3-ce431ef79f9f.jpeg. Caption evidence: This is a natural hand drawn image on lined paper. At the top, an equation is written: -6 + 12 + -4 = 2.Below this, a horizontal number line is drawn. The number 0 is circled. The minimum number on this number line is -1...",
+  "topics": [
+    "conceptual_understanding",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

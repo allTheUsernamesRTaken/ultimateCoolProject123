@@ -96,6 +96,10 @@ class CriterionScore(BaseModel):
         return self.points
 
     @property
+    def max_score(self) -> float:
+        return self.max_points
+
+    @property
     def topics(self) -> list[TopicTag | str]:
         return self.concept_tags
 

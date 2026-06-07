@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_010",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 9.0,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "Yes, the student correctly labeled the number line. The left side is labeled with negative integers from −12 to −1, and the right side is labeled with positive integers from 1 to 12, with 0 correctly positioned as the midpoint.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "Yes, the student used arrows to indicate the direction of movement on the number line. The first arrow starts at 12 and moves left by 6 units to 6. The second arrow starts at \n6 and moves left by 4 units to 2.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "Yes, the final answer, 2, is clearly marked on the number line where the student's last arrow lands, indicating the solution to the equation.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "what_errors_does_the_student_make_in_their_response_if_there_are_none_wr",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "mathematical_reasoning"
+      ],
+      "feedback": "There are no errors in the student's response. The student correctly rearranged the original equation and solved it accurately using the number line.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image b4214e02-e3fb-41ea-8339-a450fce2c071.png. Caption evidence: This is a digitally drawn number line. That's a horizontal number line. It starts at negative... The left side of the number line is at negative 12, and it goes all the way to positive 12. There's only whole number... Po...",
+  "topics": [
+    "conceptual_understanding",
+    "mathematical_reasoning",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

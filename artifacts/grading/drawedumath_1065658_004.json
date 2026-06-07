@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_004",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 6.1,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "The student labels the number line correctly.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student did not use arrows to indicate the direction of movement on the number line. The arrows are more like brackets that span from one number to another.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "The final answer is not clearly marked on the number line. The reader would have to infer a final answer of 2.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_the_student_label_the_magnitude_of_each_arrow",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student did not label the magnitude of each arrow.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image 2b804ad7-6c17-4ae9-b830-17d3bfc445b2.png. Caption evidence: This is a digital image. It's a digital drawn image. The student is trying to figure out what is the sum of negative 6, 12, and negative 4 using a number line. And so the student is drawing arrows to show distance betwee...",
+  "topics": [
+    "conceptual_understanding",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

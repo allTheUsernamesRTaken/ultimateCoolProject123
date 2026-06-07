@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_009",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 5.1,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "The student did not label the number line correctly. The numbers to the left of the 0 are positive when they should be negative.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 1.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "It is unclear if the student used arrows to indicate the direction of movement on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "The final answer is not clearly marked on the number line. There is a box around the number 0, but the evidence on the hand drawn model does not indicate that this would be the final answer.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_the_student_label_each_addend_on_the_number_line",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student did not label each addend on the number line.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image a5c95313-cfb3-4455-8a8c-de8efcfc9847.png. Caption evidence: This is a hand-drawn digital image where the student is trying to draw a number line by hand. The way that the number line is written, there's actually an error because all the numbers to the left of zero are supposed to...",
+  "topics": [
+    "conceptual_understanding",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

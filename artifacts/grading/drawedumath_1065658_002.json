@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_002",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 7.3,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "The student labeled the number line correctly.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student used arrows to indicate the direction of movement on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "The final answer is clearly marked on the number line with a circle around the integer 2.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_the_student_label_the_magnitude_of_each_arrow_on_the_number_line_dia",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student did not label the magnitude of each arrow on the number line diagram.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image 0a70eabf-c272-4d6b-a271-f44470be10dc.jpeg. Caption evidence: This is a natural hand drawn image on blank paper. A horizontal number line is drawn. The minimum number on this number line is -9 and the maximum number is 10. Each consecutive whole number between -9 and 10 is plotted ...",
+  "topics": [
+    "conceptual_understanding",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

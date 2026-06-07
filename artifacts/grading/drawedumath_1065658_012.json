@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_012",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 7.3,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "The student labeled the number line correctly.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 0.8,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student did not use arrow to indicate the direction of movement on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "The final answer is clearly marked on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "what_errors_does_the_student_make_in_their_response_if_there_are_none_wr",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "mathematical_reasoning"
+      ],
+      "feedback": "An error the student makes is that they do not include any evidence of using the addends in their model. They only mark the final answer on the number line with no evidence of how they got to that point.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image e33295ea-2b5c-4952-a53f-1fc2f288f4a7.jpeg. Caption evidence: This image is of a handwritten number line that is drawn on graph paper. The number line itself starts at negative 10 and goes all the way to 10. Zero is the midpoint and the only numbers that are marked on the number li...",
+  "topics": [
+    "conceptual_understanding",
+    "mathematical_reasoning",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

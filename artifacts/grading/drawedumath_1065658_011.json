@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_011",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 9.0,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "Yes, the student labeled the number line correctly, with negative integers from −14 to −1 on the left side and positive integers from 1 to 14 on the right side, with 0 as the midpoint.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "Yes, the student used curved arrows to indicate the direction of movement on the number line. The arrows clearly show the hops corresponding to each operation, with two curved arrows for each interval except from 0 to 2.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "Yes, the final answer is clearly indicated at 2, which is the end point after the student made the final hop of 4 spaces to the left from 6.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "what_errors_does_the_student_make_in_their_response_if_there_are_none_wr",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "mathematical_reasoning"
+      ],
+      "feedback": "There is no error in the student's response. The student correctly used the number line to represent the operations described.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image d3e07e18-11c1-4f8e-8cfa-32ef8a9a560e.jpeg. Caption evidence: This is a pre-printed image of student handwriting on it. It's showing a number line that has a minimum of negative 14 and a maximum of 14. Zero is the midpoint of this number line. The interval of this number line is go...",
+  "topics": [
+    "conceptual_understanding",
+    "mathematical_reasoning",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}

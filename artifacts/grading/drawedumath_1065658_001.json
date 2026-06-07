@@ -1,0 +1,60 @@
+{
+  "submission_id": "drawedumath_1065658_001",
+  "assignment_id": "drawedumath_problem_1065658",
+  "score": 8.5,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "did_students_label_the_number_line_correctly",
+      "points": 2.5,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation"
+      ],
+      "feedback": "The student labeled the number line correctly. They labeled the tick marks with even integers, increasing from -12 to 12.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "did_students_use_arrows_to_indicate_the_direction_of_movement_on_the_num",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student used arrows to indicate the direction of movement on the number line.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "is_the_final_answer_clearly_marked_on_the_number_line",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "conceptual_understanding"
+      ],
+      "feedback": "The final answer is clearly marked on the number line with a circle around the integer 2.",
+      "confidence": 0.86
+    },
+    {
+      "criterion_id": "does_the_student_label_the_magnitude_of_each_arrow",
+      "points": 2.0,
+      "max_points": 2.5,
+      "concept_tags": [
+        "notation",
+        "procedure"
+      ],
+      "feedback": "The student does not label the magnitude of each arrow.",
+      "confidence": 0.86
+    }
+  ],
+  "feedback": "Dataset-backed review fixture from DrawEduMath. Teacher QA was converted into rubric feedback for image 04255753-0b36-495d-87eb-1e3cd0c97634.jpeg. Caption evidence: The student's answer shows the summation of positive and negative integers, negative 6, 12, and negative 4, using a number line. With even-numbered intervals, the directions of the arrows illustrate three summation steps...",
+  "topics": [
+    "conceptual_understanding",
+    "notation",
+    "procedure"
+  ],
+  "confidence": 0.86,
+  "needs_review": false,
+  "review_flags": []
+}
