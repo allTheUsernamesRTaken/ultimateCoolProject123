@@ -1,0 +1,14 @@
+{
+  "submission_id": "sample_text_pdf",
+  "assignment_id": "algebra_linear_equations",
+  "student_id": "student_fixture_001",
+  "files": [
+    {
+      "drive_id": "fixture_text_pdf",
+      "mime_type": "application/pdf",
+      "filename": "text_layer.pdf",
+      "path": "artifacts/submission_files/sample_text_pdf/text_layer.pdf"
+    }
+  ],
+  "pulled_at": "2026-06-07T21:00:00Z"
+}

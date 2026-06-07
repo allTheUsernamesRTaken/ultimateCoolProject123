@@ -23,8 +23,8 @@ pdf2image>=1.17           # scanned PDF pages -> images for OCR (requires Popple
 Pillow>=10.2              # image handling for OCR
 pypdf>=4.1                # detect/extract a PDF text layer (skip OCR when present)
 
-# --- P2: Grading (Claude API, structured output) ---
-anthropic>=0.40           # claude-opus-4-8 / claude-sonnet-4-6 grading client
+# --- P2: Grading (OpenAI API, structured output) ---
+openai>=2.0               # Responses API structured-output grading client
 
 # --- P3: Teacher UI + cohort analytics ---
 streamlit>=1.33

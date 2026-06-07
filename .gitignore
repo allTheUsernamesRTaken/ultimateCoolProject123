@@ -4,5 +4,10 @@
 __pycache__/
 *.pyc
 artifacts/*
+!artifacts/config/
+!artifacts/config/*.json
+!artifacts/submissions/
+!artifacts/submissions/*.json
 !artifacts/grading/
 !artifacts/grading/*.json
+artifacts/extracted/

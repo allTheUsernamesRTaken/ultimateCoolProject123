@@ -1,0 +1,14 @@
+{
+  "submission_id": "sample_scanned_pdf",
+  "assignment_id": "algebra_linear_equations",
+  "student_id": "student_fixture_002",
+  "files": [
+    {
+      "drive_id": "fixture_scanned_pdf",
+      "mime_type": "application/pdf",
+      "filename": "scanned.pdf",
+      "path": "artifacts/submission_files/sample_scanned_pdf/scanned.pdf"
+    }
+  ],
+  "pulled_at": "2026-06-07T21:05:00Z"
+}

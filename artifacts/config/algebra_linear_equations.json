@@ -1,0 +1,34 @@
+{
+  "assignment_id": "algebra_linear_equations",
+  "subject": "Algebra I",
+  "max_score": 10,
+  "rubric": [
+    {
+      "id": "solve_equation",
+      "description": "Correctly solve the one-step linear equation.",
+      "max_points": 4,
+      "topics": ["linear_equations", "algebraic_manipulation"]
+    },
+    {
+      "id": "show_procedure",
+      "description": "Show a valid inverse-operation procedure on both sides of the equation.",
+      "max_points": 3,
+      "topics": ["procedure", "mathematical_reasoning"]
+    },
+    {
+      "id": "explain_reasoning",
+      "description": "Explain why the operation isolates the variable.",
+      "max_points": 3,
+      "topics": ["conceptual_understanding", "mathematical_reasoning"]
+    }
+  ],
+  "answer_key": "For x + 3 = 7, subtract 3 from both sides to get x = 4. The inverse operation keeps both sides equal while isolating x.",
+  "allowed_topics": [
+    "linear_equations",
+    "algebraic_manipulation",
+    "procedure",
+    "conceptual_understanding",
+    "mathematical_reasoning",
+    "notation"
+  ]
+}
