@@ -116,9 +116,17 @@ def _extract_pdf_text(path: Path, warnings: list[str]) -> str:
 def _resolve_file_path(file: SubmissionFile, artifacts_root: Path, submission_id: str) -> Path:
     if file.path:
         path = Path(file.path)
-        return path if path.is_absolute() else Path.cwd() / path
+        if path.is_absolute():
+            return path
+        root_relative = artifacts_root / path
+        if root_relative.exists():
+            return root_relative
+        return Path.cwd() / path
 
-    return artifacts_root / "submission_files" / submission_id / file.filename
+    submission_file = artifacts_root / "submission_files" / submission_id / file.filename
+    if submission_file.exists():
+        return submission_file
+    return artifacts_root / "raw_files" / file.filename
 
 
 def _format_file_chunk(filename: str, text: str) -> str:

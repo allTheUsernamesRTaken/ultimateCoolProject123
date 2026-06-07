@@ -8,6 +8,9 @@ artifacts/*
 !artifacts/config/*.json
 !artifacts/submissions/
 !artifacts/submissions/*.json
+!artifacts/submission_files/
+!artifacts/submission_files/**/
+!artifacts/submission_files/**/*.pdf
 !artifacts/grading/
 !artifacts/grading/*.json
 artifacts/extracted/

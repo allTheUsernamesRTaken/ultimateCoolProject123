@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 from schemas import AssignmentConfig, ExtractedContent, TopicTag
 
 
-DEFAULT_MODEL = "gpt-5.4-mini"
+DEFAULT_MODEL = "gpt-5-mini"
 
 
 class CriterionGradeDraft(BaseModel):

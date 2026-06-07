@@ -67,3 +67,27 @@ def test_extract_submission_uses_ocr_when_no_text_layer(tmp_path):
     assert extracted.needs_review is True
     assert extracted.confidence == 0.52
     assert "OCR recovered answer" in extracted.text
+
+
+def test_extract_submission_falls_back_to_p1_raw_files_directory(tmp_path):
+    raw_files = tmp_path / "raw_files"
+    raw_files.mkdir()
+    source = raw_files / "answer.txt"
+    source.write_text("Stored in the P1 raw_files fixture layout.", encoding="utf-8")
+    submission = Submission(
+        submission_id="sub_raw",
+        assignment_id="assignment",
+        student_id="student",
+        files=[
+            SubmissionFile(
+                mime_type="text/plain",
+                filename="answer.txt",
+            )
+        ],
+        pulled_at="2026-06-07T21:00:00Z",
+    )
+
+    extracted = extract_submission(submission, tmp_path, FailingOcrEngine())
+
+    assert extracted.source == "parsed"
+    assert "P1 raw_files" in extracted.text
