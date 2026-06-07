@@ -1,0 +1,32 @@
+{
+  "submission_id": "sub_math_001",
+  "assignment_id": "linear-equations-quiz",
+  "score": 8,
+  "max_score": 10,
+  "rubric_breakdown": [
+    {
+      "criterion": "Solves one-step equations",
+      "score": 3,
+      "max_score": 3,
+      "feedback": "Accurately isolated the variable in one-step equations.",
+      "topics": ["one-step equations"]
+    },
+    {
+      "criterion": "Solves two-step equations",
+      "score": 3,
+      "max_score": 4,
+      "feedback": "Mostly correct, with one sign error while moving constants.",
+      "topics": ["two-step equations", "integer operations"]
+    },
+    {
+      "criterion": "Shows reasoning",
+      "score": 2,
+      "max_score": 3,
+      "feedback": "Work is readable, but one step needs clearer justification.",
+      "topics": ["mathematical reasoning"]
+    }
+  ],
+  "feedback": "You did a strong job isolating variables and keeping your work organized. The main issue is a sign change when moving a constant across the equals sign, which suggests you may be treating subtraction as if it stays on the same side. Next time, write the inverse operation beside each line before simplifying.",
+  "topics": ["one-step equations", "two-step equations", "integer operations", "mathematical reasoning"],
+  "confidence": 0.91
+}

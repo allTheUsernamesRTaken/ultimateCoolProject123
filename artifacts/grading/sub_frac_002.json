@@ -1,0 +1,32 @@
+{
+  "submission_id": "sub_frac_002",
+  "assignment_id": "fraction-word-problems",
+  "score": 4,
+  "max_score": 10,
+  "rubric_breakdown": [
+    {
+      "criterion": "Models the situation",
+      "score": 1,
+      "max_score": 4,
+      "feedback": "Several problems use addition when the story asks for scaling.",
+      "topics": ["fraction models"]
+    },
+    {
+      "criterion": "Computes with fractions",
+      "score": 2,
+      "max_score": 4,
+      "feedback": "Fraction arithmetic is partially correct after the model is chosen.",
+      "topics": ["fraction operations"]
+    },
+    {
+      "criterion": "Explains answer in context",
+      "score": 1,
+      "max_score": 2,
+      "feedback": "Units are sometimes missing from the final answers.",
+      "topics": ["word problem reasoning"]
+    }
+  ],
+  "feedback": "You carried out some fraction calculations correctly once you had an expression. The bigger challenge is translating the words into the right operation, especially when a problem asks for a fraction of a quantity. Underline the action phrase first, then decide whether the amount is being combined, shared, or scaled.",
+  "topics": ["fraction models", "fraction operations", "word problem reasoning"],
+  "confidence": 0.79
+}

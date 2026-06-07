@@ -1,0 +1,32 @@
+{
+  "submission_id": "sub_math_003",
+  "assignment_id": "linear-equations-quiz",
+  "score": 6,
+  "max_score": 10,
+  "rubric_breakdown": [
+    {
+      "criterion": "Solves one-step equations",
+      "score": 3,
+      "max_score": 3,
+      "feedback": "One-step equations are solved correctly.",
+      "topics": ["one-step equations"]
+    },
+    {
+      "criterion": "Solves two-step equations",
+      "score": 1.5,
+      "max_score": 4,
+      "feedback": "The setup is right, but sign errors appear after subtracting constants.",
+      "topics": ["two-step equations", "integer operations"]
+    },
+    {
+      "criterion": "Shows reasoning",
+      "score": 1.5,
+      "max_score": 3,
+      "feedback": "Some work is skipped, making it hard to verify the equation balance.",
+      "topics": ["mathematical reasoning"]
+    }
+  ],
+  "feedback": "You have the right structure for solving equations, and your one-step work is solid. The missed points come from losing track of balance after subtracting or adding a constant, which can hide the variable's real value. Add one line that shows the same operation on both sides before simplifying.",
+  "topics": ["one-step equations", "two-step equations", "integer operations", "mathematical reasoning"],
+  "confidence": 0.88
+}

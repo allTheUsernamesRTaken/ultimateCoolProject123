@@ -1,0 +1,32 @@
+{
+  "submission_id": "sub_math_002",
+  "assignment_id": "linear-equations-quiz",
+  "score": 5,
+  "max_score": 10,
+  "rubric_breakdown": [
+    {
+      "criterion": "Solves one-step equations",
+      "score": 2,
+      "max_score": 3,
+      "feedback": "Correct on addition and subtraction examples, but multiplication inverses were inconsistent.",
+      "topics": ["one-step equations"]
+    },
+    {
+      "criterion": "Solves two-step equations",
+      "score": 1,
+      "max_score": 4,
+      "feedback": "Several problems combine unlike terms before isolating the variable.",
+      "topics": ["two-step equations", "integer operations"]
+    },
+    {
+      "criterion": "Shows reasoning",
+      "score": 2,
+      "max_score": 3,
+      "feedback": "Most steps are shown, though the reason for each inverse operation is unclear.",
+      "topics": ["mathematical reasoning"]
+    }
+  ],
+  "feedback": "You showed your steps, which makes it much easier to see your thinking. The biggest gap is deciding which inverse operation comes first in a two-step equation, especially when negative numbers are involved. Practice circling the constant term first, undoing it, and only then dividing by the coefficient.",
+  "topics": ["one-step equations", "two-step equations", "integer operations", "mathematical reasoning"],
+  "confidence": 0.84
+}

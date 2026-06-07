@@ -1,0 +1,32 @@
+{
+  "submission_id": "sub_frac_001",
+  "assignment_id": "fraction-word-problems",
+  "score": 7,
+  "max_score": 10,
+  "rubric_breakdown": [
+    {
+      "criterion": "Models the situation",
+      "score": 3,
+      "max_score": 4,
+      "feedback": "Correctly selected multiplication or division in most problems.",
+      "topics": ["fraction models"]
+    },
+    {
+      "criterion": "Computes with fractions",
+      "score": 2,
+      "max_score": 4,
+      "feedback": "Arithmetic is mostly right, with one denominator error.",
+      "topics": ["fraction operations"]
+    },
+    {
+      "criterion": "Explains answer in context",
+      "score": 2,
+      "max_score": 2,
+      "feedback": "Answers include clear units and match the story context.",
+      "topics": ["word problem reasoning"]
+    }
+  ],
+  "feedback": "Your explanations connect the numbers back to the story, which is a real strength. The main calculation issue is keeping common denominators straight when combining fractional amounts. Before finalizing an answer, rewrite both fractions with the same denominator and check that the unit still matches the question.",
+  "topics": ["fraction models", "fraction operations", "word problem reasoning"],
+  "confidence": 0.9
+}
