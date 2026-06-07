@@ -1,91 +1,42 @@
-from __future__ import annotations
-
+from pydantic import BaseModel, Field
+from typing import List, Optional
 from datetime import datetime
-from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
-
-
-class ArtifactModel(BaseModel):
-    model_config = ConfigDict(extra="allow")
-
-
-class FileRef(ArtifactModel):
+class FileRef(BaseModel):
     drive_id: str
     mime_type: str
     filename: str
 
-
-class Submission(ArtifactModel):
+class Submission(BaseModel):
     submission_id: str
     assignment_id: str
     student_id: str
-    files: list[FileRef]
+    files: List[FileRef] = Field(default_factory=list)
     pulled_at: datetime
 
-
-class ExtractedContent(ArtifactModel):
+class ExtractedContent(BaseModel):
     submission_id: str
-    source: Literal["ocr", "parsed"]
+    source: str = Field(pattern="^(ocr|parsed)$")
     text: str
-    needs_review: bool = False
+    needs_review: bool
 
-
-class RubricBreakdown(ArtifactModel):
+class RubricItem(BaseModel):
     criterion: str
-    score: float
-    max_score: float
-    feedback: str = ""
-    topics: list[str] = Field(default_factory=list)
+    points: float
+    max_points: float
 
-    @model_validator(mode="after")
-    def score_cannot_exceed_max(self) -> "RubricBreakdown":
-        if self.max_score <= 0:
-            raise ValueError("max_score must be greater than 0")
-        if self.score < 0:
-            raise ValueError("score cannot be negative")
-        if self.score > self.max_score:
-            raise ValueError("score cannot exceed max_score")
-        return self
-
-
-class GradingResult(ArtifactModel):
+class GradingResult(BaseModel):
     submission_id: str
     assignment_id: str
     score: float
     max_score: float
-    rubric_breakdown: list[RubricBreakdown]
+    rubric_breakdown: List[RubricItem] = Field(default_factory=list)
     feedback: str
-    topics: list[str] = Field(default_factory=list)
+    topics: List[str] = Field(default_factory=list)
     confidence: float
 
-    @field_validator("topics", mode="before")
-    @classmethod
-    def coerce_topics(cls, value: Any) -> list[str]:
-        if value is None:
-            return []
-        return value
-
-    @model_validator(mode="after")
-    def scores_are_valid(self) -> "GradingResult":
-        if self.max_score <= 0:
-            raise ValueError("max_score must be greater than 0")
-        if self.score < 0:
-            raise ValueError("score cannot be negative")
-        if self.score > self.max_score:
-            raise ValueError("score cannot exceed max_score")
-        if not 0 <= self.confidence <= 1:
-            raise ValueError("confidence must be between 0 and 1")
-        return self
-
-    @property
-    def percent(self) -> float:
-        return self.score / self.max_score
-
-
-class AssignmentConfig(ArtifactModel):
-    assignment_id: str
-    rubric: list[dict[str, Any]]
+class AssignmentConfig(BaseModel):
+    rubric: str
     max_score: float
     subject: str
-    answer_key: str | None = None
+    answer_key: Optional[str] = None

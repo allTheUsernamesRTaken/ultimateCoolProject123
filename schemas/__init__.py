@@ -1,3 +1,5 @@
+# Make schemas a package
+
 from .models import (
     AssignmentConfig,
     ExtractedContent,
