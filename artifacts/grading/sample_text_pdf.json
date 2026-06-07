@@ -1,0 +1,52 @@
+{
+  "submission_id": "sample_text_pdf",
+  "assignment_id": "algebra_linear_equations",
+  "score": 10.0,
+  "max_score": 10.0,
+  "rubric_breakdown": [
+    {
+      "criterion_id": "solve_equation",
+      "points": 4.0,
+      "max_points": 4.0,
+      "concept_tags": [
+        "linear_equations",
+        "algebraic_manipulation"
+      ],
+      "feedback": "What went well: You correctly solved x + 3 = 7 and found x = 4. Specific error: No error detected in the arithmetic or final answer. Misconception: A common misconception on similar problems is adding instead of using the inverse operation (which would give an incorrect result). Next step: Practice two more one-step equations that require subtraction to reinforce the inverse-operation idea.",
+      "confidence": 0.9
+    },
+    {
+      "criterion_id": "show_procedure",
+      "points": 3.0,
+      "max_points": 3.0,
+      "concept_tags": [
+        "procedure",
+        "mathematical_reasoning"
+      ],
+      "feedback": "What went well: You explicitly stated “Subtract 3 from both sides,” showing the inverse operation on both sides. Specific error: No procedural error detected. Misconception: Students sometimes forget to apply the same operation to both sides, breaking the balance of the equation. Next step: Solve a similar equation and write the intermediate step showing both sides after the operation (e.g., x + 3 - 3 = 7 - 3).",
+      "confidence": 0.9
+    },
+    {
+      "criterion_id": "explain_reasoning",
+      "points": 3.0,
+      "max_points": 3.0,
+      "concept_tags": [
+        "conceptual_understanding",
+        "mathematical_reasoning"
+      ],
+      "feedback": "What went well: You explained that the operation keeps the equation balanced while isolating x. Specific error: No error detected in the explanation. Misconception: A frequent underlying misconception is not recognizing that the inverse operation undoes the added number; students may instead try unrelated operations. Next step: In one sentence, practice stating why subtraction is the inverse of addition for this problem (e.g., 'Subtracting 3 undoes adding 3, leaving x alone').",
+      "confidence": 0.9
+    }
+  ],
+  "feedback": "What went well: You correctly subtracted 3 from both sides to get x = 4 and gave a clear reason that this keeps the equation balanced while isolating x.\nSpecific error: No errors detected in the solution, procedure, or explanation.\nMisconception: A common misconception that leads to errors here is confusing which inverse operation to use (for example, adding instead of subtracting) or failing to perform the same operation on both sides, which breaks the balance.\nNext step: Solve two more one-step equations that require subtraction and write the intermediate equality showing both sides after performing the subtraction (e.g., x + 5 - 5 = 12 - 5).",
+  "topics": [
+    "linear_equations",
+    "algebraic_manipulation",
+    "procedure",
+    "conceptual_understanding",
+    "mathematical_reasoning"
+  ],
+  "confidence": 0.9,
+  "needs_review": false,
+  "review_flags": []
+}

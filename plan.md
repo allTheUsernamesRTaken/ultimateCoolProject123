@@ -55,8 +55,9 @@ AssignmentConfig:  rubric, max_score, subject, optional answer_key
 
 ## Stage notes
 
-- **Ingestion:** `classroom.coursework` + `drive.readonly` scopes. Idempotent sync.
-  Tokens in env, never committed. Anonymizable `student_id`.
+- **Ingestion:** `classroom.coursework.students.readonly` + `drive.readonly` for
+  sync; `classroom.coursework.students` when publishing grades. Idempotent sync.
+  Tokens stay local, never committed. Anonymizable `student_id`.
 - **Extraction:** try a text parse first; if PDF has a text layer → `source="parsed"`,
   skip OCR. Else OCR, flag low-confidence pages with `needs_review`.
 - **Grading:** prompt = `AssignmentConfig` + `ExtractedContent`. Ask for structured
@@ -64,7 +65,8 @@ AssignmentConfig:  rubric, max_score, subject, optional answer_key
   step. Tag `topics` from a controlled vocabulary so cohort analytics stay consistent.
 - **UI / analytics:** average score per topic; flag "class struggling with X" when a
   topic's average drops below a cutoff across enough students. Teacher edits feedback
-  before export — no auto-posting back to Classroom in v1.
+  before export. Classroom passback can publish overall draft/assigned grades; rubric
+  line scores remain local because the Classroom API does not allow writing them.
 
 ## Stack
 

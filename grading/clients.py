@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from typing import Protocol
 
 from pydantic import BaseModel, Field
@@ -10,6 +11,10 @@ from schemas import AssignmentConfig, ExtractedContent, TopicTag
 
 
 DEFAULT_MODEL = "gpt-5-mini"
+POWERSHELL_ENV_PATTERN = re.compile(
+    r"""^\s*\$env:([A-Za-z_][A-Za-z0-9_]*)\s*=\s*["'](.*)["']\s*$"""
+)
+DOTENV_PATTERN = re.compile(r"""^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$""")
 
 
 class CriterionGradeDraft(BaseModel):
@@ -42,6 +47,7 @@ class GradingClient(Protocol):
 
 class OpenAIGradingClient:
     def __init__(self, model: str | None = None) -> None:
+        _load_environment()
         self.model = model or os.getenv("AIGRADER_OPENAI_MODEL", DEFAULT_MODEL)
 
     def grade(self, config: AssignmentConfig, extracted: ExtractedContent) -> GradeDraft:
@@ -127,6 +133,36 @@ def _build_messages(config: AssignmentConfig, extracted: ExtractedContent) -> li
             "content": json.dumps(payload, indent=2),
         },
     ]
+
+
+def _load_environment() -> None:
+    env_path = os.path.join(os.getcwd(), ".env")
+    if not os.path.exists(env_path):
+        return
+
+    with open(env_path, encoding="utf-8-sig") as env_file:
+        for line in env_file:
+            _load_env_line(line)
+
+
+def _load_env_line(line: str) -> None:
+    stripped = line.strip()
+    if not stripped or stripped.startswith("#"):
+        return
+
+    match = POWERSHELL_ENV_PATTERN.match(line) or DOTENV_PATTERN.match(line)
+    if not match:
+        return
+
+    key, value = match.groups()
+    os.environ.setdefault(key, _clean_env_value(value))
+
+
+def _clean_env_value(value: str) -> str:
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+        return value[1:-1]
+    return value
 
 
 def _extract_response_text(response: object) -> str:

@@ -64,7 +64,7 @@ the team is waiting on those.
 ## P2 — Extraction + Grading
 
 ```
-Build the extraction + grading slice of an AI grader, in Python.
+iBuild the extraction + grading slice of an AI grader, in Python.
 
 You read artifacts/submissions/<id>.json (Submission) and artifacts/config/<id>.json
 (AssignmentConfig), and write artifacts/extracted/<id>.json (ExtractedContent) then
@@ -80,7 +80,7 @@ Extraction tasks:
 
 Grading tasks:
 4. Prompt = AssignmentConfig (rubric + optional answer key) + ExtractedContent.text.
-   Use the Claude API (claude-sonnet or claude-opus) with structured output.
+   Use the openai API (openai or openai) with structured output.
 5. Return per-criterion points, concept tags, and feedback prose. Feedback must: name
    what was done well, pinpoint the specific error AND the misconception behind it, and
    give one concrete next step. Encouraging, not punitive.
@@ -88,7 +88,7 @@ Grading tasks:
    stay consistent. Low confidence or large rubric disagreement → set a review flag.
 7. Output GradingResult. CLI: `python -m grading run <submission_id>`.
 
-Before writing Claude API code, consult the claude-api skill for current model ids and
+Before writing openai API code, consult the openai -api skill for current model ids and
 structured-output usage.
 ```
 

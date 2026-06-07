@@ -46,9 +46,13 @@ FileRef = SubmissionFile
 class Submission(BaseModel):
     submission_id: str
     assignment_id: str
+    course_id: str | None = None
     student_id: str
     files: list[SubmissionFile] = Field(default_factory=list)
     pulled_at: datetime
+    source: str = "manual"
+    classroom_alternate_link: str | None = None
+    classroom_state: str | None = None
 
 
 class ExtractedContent(BaseModel):
